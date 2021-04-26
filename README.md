@@ -6,7 +6,7 @@ Securii Password Manager
 
 ## !! WARNING !!
 
-<img src="https://github.com/andybeardness/Android-Securii/blob/main/imgs/warning.png" height="500">
+<img src="https://github.com/andybeardness/Android-Securii/blob/main/imgs/warning.png" height="300">
 
 This app is not for using
 
