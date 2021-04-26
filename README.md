@@ -37,3 +37,16 @@ The app does not collect data. Everything is stored only on the device
 | Start screen  | Passwords list | Create new password | Show existing password |
 | :-------------: | :-------------: | :-------------: | :-------------: |
 | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s1.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s4.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s3.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s2.png)  |
+
+----
+
+## Video preview
+
+Click to play youtube video
+
+⚠️ DANGER :
+
+- _Link is opening at current tab_ 
+- _Video contains music_
+
+[![preview](https://img.youtube.com/vi/EzXtsDDeiFM/0.jpg)](https://www.youtube.com/watch?v=EzXtsDDeiFM "https://raw.githubusercontent.com/andybeardness/Android-Securii/main/imgs/MyCollages.png")
