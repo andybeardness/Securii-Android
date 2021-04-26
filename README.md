@@ -1,2 +1,2 @@
-# Android-App-Securii
+# Android-Securii
 Securii Password Manager
