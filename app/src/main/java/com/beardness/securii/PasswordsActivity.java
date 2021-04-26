@@ -11,10 +11,13 @@ import com.beardness.securii.SQLiteTools.PasswordDatabase;
 import com.beardness.securii.Codez.Factories.ListenerFactory;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * Passwords list page
+ */
 public class PasswordsActivity extends AppCompatActivity {
   
-  private final Fragment noPasswordsFragment = new NoPasswordsFragment();
-  private final Fragment passwordsFragment = new PasswordsFragment();
+  private final Fragment noPasswordsFragment = new NoPasswordsFragment(); // fragment if no saved passwords
+  private final Fragment passwordsFragment = new PasswordsFragment(); // fragment if passwords exist
   
   private FragmentManager fManager;
   private FragmentTransaction fTransaction;

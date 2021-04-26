@@ -9,10 +9,13 @@ import android.os.Bundle;
 
 import com.beardness.securii.SQLiteTools.PasswordDatabase;
 
+/**
+ * Page with list of favorites activity
+ */
 public class FavoritesActivity extends AppCompatActivity {
   
-  private final Fragment noPasswordsFragment = new NoPasswordsFragment();
-  private final Fragment favoritesFragment = new FavoritesFragment();
+  private final Fragment noPasswordsFragment = new NoPasswordsFragment(); // fragment if no saved passwords
+  private final Fragment favoritesFragment = new FavoritesFragment(); // fragment if passwords exist
   
   private FragmentManager fManager;
   private FragmentTransaction fTransaction;

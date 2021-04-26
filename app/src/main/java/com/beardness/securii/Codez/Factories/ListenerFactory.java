@@ -17,11 +17,19 @@ import com.beardness.securii.ChoosenPasswordActivity;
 import com.beardness.securii.FavoritesActivity;
 import com.beardness.securii.PasswordsActivity;
 
+/**
+ * Factory for listeners
+ */
 public class ListenerFactory {
   
-  private ListenerFactory() {
-  }
+  private ListenerFactory() {}
   
+  /**
+   * Getting main screen button "favorites" listener
+   *
+   * @param context context
+   * @return listener
+   */
   public static View.OnClickListener getMainButtonFavoriteListener(Context context) {
     return new View.OnClickListener() {
       @Override
@@ -32,6 +40,12 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting main screen button "passwords" listener
+   *
+   * @param context context
+   * @return listener
+   */
   public static View.OnClickListener getMainButtonPasswordListener(Context context) {
     return new View.OnClickListener() {
       @Override
@@ -42,6 +56,12 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting main screen button "about" listener
+   *
+   * @param context context
+   * @return listener
+   */
   public static View.OnClickListener getMainButtonAboutListener(Context context) {
     return new View.OnClickListener() {
       @Override
@@ -52,6 +72,12 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting listener for FAB
+   *
+   * @param context context
+   * @return listener
+   */
   public static View.OnClickListener getFabListener(Context context) {
     return new View.OnClickListener() {
       Intent intent;
@@ -64,6 +90,13 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting listener for seek bar
+   *
+   * @param context context
+   * @param value target textview to show progress
+   * @return listener
+   */
   public static SeekBar.OnSeekBarChangeListener getSeekLengthListener(Context context,
                                                                       TextView value) {
     return new SeekBar.OnSeekBarChangeListener() {
@@ -84,6 +117,18 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting listener for password visibility button
+   *
+   * @param context context
+   * @param password password
+   * @param realPassword real password
+   * @param cypherPassword cypher password
+   * @param btnVisibility visibility button
+   * @param resDrawIdVisibleOn resource drawable id "Visible On"
+   * @param resDrawIdVisibleOff resource drawable id "Visible Off"
+   * @return listener
+   */
   public static View.OnTouchListener getVisibilityListener(Context context,
                                                            TextView password,
                                                            String realPassword,
@@ -114,6 +159,13 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting listener for favorites list
+   *
+   * @param view view
+   * @param cursor cursor
+   * @return listener
+   */
   public static AdapterView.OnItemClickListener getFavoritesListListener(View view,
                                                                          Cursor cursor) {
     return new AdapterView.OnItemClickListener() {
@@ -129,6 +181,12 @@ public class ListenerFactory {
     };
   }
   
+  /**
+   * Getting listener for passwords list
+   *
+   * @param context context
+   * @return listener
+   */
   public static AdapterView.OnItemClickListener getPasswordsListListener(Context context) {
     return new AdapterView.OnItemClickListener() {
       @Override
@@ -140,7 +198,12 @@ public class ListenerFactory {
     };
   }
   
-  
+  /**
+   * Creating String by format
+   *
+   * @param progress progress
+   * @return formatted string
+   */
   private static String getStringValue(int progress) {
     return String.format("%02d", (5 + progress * 5));
   }

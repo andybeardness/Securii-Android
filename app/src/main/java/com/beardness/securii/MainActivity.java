@@ -9,6 +9,9 @@ import android.widget.TextView;
 import com.beardness.securii.Codez.Factories.ListenerFactory;
 import com.beardness.securii.Codez.RandomJoke;
 
+/**
+ * Start screen
+ */
 public class MainActivity extends AppCompatActivity {
   
   private Button favorites;
@@ -22,20 +25,22 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     
+    // init views
     favorites = (Button) findViewById(R.id.favorites);
     passwords = (Button) findViewById(R.id.passwords);
     about = (Button) findViewById(R.id.about);
+    joke = (TextView) findViewById(R.id.joke);
   
+    // setting listeners by factory
     favorites.setOnClickListener(ListenerFactory.getMainButtonFavoriteListener(this));
     passwords.setOnClickListener(ListenerFactory.getMainButtonPasswordListener(this));
     about.setOnClickListener(ListenerFactory.getMainButtonAboutListener(this));
-    
-    joke = (TextView) findViewById(R.id.joke);
   }
   
   @Override
   protected void onResume() {
     super.onResume();
+    // setting random joke
     joke.setText(RandomJoke.getRandomJoke(this));
   }
 }

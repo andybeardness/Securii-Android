@@ -9,6 +9,9 @@ import android.view.View;
 
 import com.beardness.securii.StaticValues.Contacts;
 
+/**
+ * About page
+ */
 public class AboutActivity extends AppCompatActivity {
   
   private Intent intent;
@@ -20,12 +23,14 @@ public class AboutActivity extends AppCompatActivity {
     setContentView(R.layout.activity_about);
   }
   
+  // to github
   public void onClickGithub(View view) {
     uri = Uri.parse(Contacts.GITHUB_URL);
     intent = new Intent(Intent.ACTION_VIEW, uri);
     startActivity(intent);
   }
   
+  // to instagram
   public void onClickInstagram(View view) {
     uri = Uri.parse(Contacts.INSTAGRAM_URL);
     
@@ -39,6 +44,7 @@ public class AboutActivity extends AppCompatActivity {
     }
   }
   
+  // to telegram
   public void onClickTelegram(View view) {
     uri = Uri.parse(Contacts.TELEGRAM_URL);
     

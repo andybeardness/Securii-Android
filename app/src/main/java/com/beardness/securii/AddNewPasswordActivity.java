@@ -18,8 +18,12 @@ import com.beardness.securii.PasswordGenerator.PG;
 import com.beardness.securii.SQLiteTools.PasswordDatabase;
 import com.beardness.securii.Codez.Factories.ListenerFactory;
 
+/**
+ * Add new password page
+ */
 public class AddNewPasswordActivity extends AppCompatActivity {
   
+  // views
   private EditText name;
   private EditText website;
   
@@ -31,8 +35,8 @@ public class AddNewPasswordActivity extends AppCompatActivity {
   private CheckBox useDigits;
   private CheckBox useSymbols;
   
+  // CV and database
   private ContentValues content;
-  
   private SQLiteDatabase db;
   
   @Override
@@ -40,25 +44,23 @@ public class AddNewPasswordActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_add_new_password);
 
+    // init all views
     name = (EditText) findViewById(R.id.name);
     website = (EditText) findViewById(R.id.website);
-    
     seek = (SeekBar) findViewById(R.id.seek_length);
     length = (TextView) findViewById(R.id.seek_length_value);
-    
-    seek.setOnSeekBarChangeListener(ListenerFactory.getSeekLengthListener(this, length));
-
     password = (EditText) findViewById(R.id.password);
-  
     useUppers = (CheckBox) findViewById(R.id.useUppers);
     useDigits = (CheckBox) findViewById(R.id.useDigits);
     useSymbols = (CheckBox) findViewById(R.id.useSymbols);
+  
+    // add listener from factory
+    seek.setOnSeekBarChangeListener(ListenerFactory.getSeekLengthListener(this, length));
   }
   
+  // try to copy password button onClick
   public void onClickCopyPassword(View view) {
-    
     String passwordText = password.getText().toString();
-    
     Copier.tryToCopyPassword(
             this,
             Copier.PASSWORD_TAG,
@@ -67,6 +69,7 @@ public class AddNewPasswordActivity extends AppCompatActivity {
             R.string.toast_nothing_to_copy);
   }
   
+  // generate password button onClick
   public void onClickGeneratePassword(View view) {
     int size = Integer.parseInt(length.getText().toString());
     String psw = PG.generate(size,
@@ -76,6 +79,7 @@ public class AddNewPasswordActivity extends AppCompatActivity {
     password.setText(psw);
   }
   
+  // save password button onClick
   public void onClickSavePassword(View view) {
     String strName = name.getText().toString();
     String strWebsite = website.getText().toString();
@@ -97,6 +101,7 @@ public class AddNewPasswordActivity extends AppCompatActivity {
     
   }
   
+  // check string is empty
   private boolean isStringEmpty(String s) {
     return s.equals("");
   }

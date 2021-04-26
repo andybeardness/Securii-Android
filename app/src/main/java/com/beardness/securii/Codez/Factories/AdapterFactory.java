@@ -6,10 +6,20 @@ import android.widget.SimpleCursorAdapter;
 
 import com.beardness.securii.SQLiteTools.PasswordDatabase;
 
+/**
+ * Factory of adapters
+ */
 public class AdapterFactory {
   
   private AdapterFactory(){}
   
+  /**
+   * Base simple cursor adapter
+   *
+   * @param view view
+   * @param cursor cursor
+   * @return SimpleCursorAdapter
+   */
   public static SimpleCursorAdapter getBasicCursorAdapter(View view, Cursor cursor) {
     return new SimpleCursorAdapter(
             view.getContext(),

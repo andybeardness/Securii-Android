@@ -2,17 +2,29 @@ package com.beardness.securii.PasswordGenerator;
 
 import java.util.Random;
 
+/**
+ * PG == Password Generator
+ */
 public class PG {
   
-  private static final String LETTERS = "qwertyuiopasdfghjklzxcvbnm";
-  private static final String UPPER_LETTERS = "QWERTYUIOPASDFGHJKLZXCVBNM";
-  private static final String DIGITS = "1234567890";
-  private static final String SYMBOLS = "!@#$%^&*()-_=+";
+  private static final String LETTERS = "qwertyuiopasdfghjklzxcvbnm"; // lowercase letters
+  private static final String UPPER_LETTERS = "QWERTYUIOPASDFGHJKLZXCVBNM"; // uppercase letters
+  private static final String DIGITS = "1234567890"; // digits
+  private static final String SYMBOLS = "!@#$%^&*()-_=+"; // symbols
   
-  private static String[] base;
+  private static String[] base; // array of Strings
   
   private PG(){}
   
+  /**
+   * Generating password
+   *
+   * @param length password length
+   * @param useUpperLetters "use upper letters?"
+   * @param useDigits "use digits?"
+   * @param useSymbols "use symbols?"
+   * @return generated password
+   */
   public static String generate(int length,
                                 boolean useUpperLetters,
                                 boolean useDigits,
@@ -25,8 +37,8 @@ public class PG {
     
     for (int ib = 0; ib < length; ib++) {
       
-      int b = random.nextInt(base.length);
-      int c = random.nextInt(base[b].length());
+      int b = random.nextInt(base.length); // get random char-pack
+      int c = random.nextInt(base[b].length()); // get random char from char-pack
   
       result.append(base[b].charAt(c));
       
@@ -35,6 +47,14 @@ public class PG {
     return result.toString();
   }
   
+  /**
+   * Returns base with conditions
+   *
+   * @param useUpperLetters "use upper letters?"
+   * @param useDigits "use digits?"
+   * @param useSymbols "use symbols?"
+   * @return base
+   */
   private static String[] getBase(boolean useUpperLetters,
                                   boolean useDigits,
                                   boolean useSymbols) {

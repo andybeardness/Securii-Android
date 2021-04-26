@@ -5,10 +5,19 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.beardness.securii.SQLiteTools.PasswordDatabase;
 
+/**
+ * Factory for cursors
+ */
 public class CursorFactory {
   
   private CursorFactory(){}
   
+  /**
+   * Getting _id, NAME where IS_FAVORITE = 1
+   *
+   * @param db database
+   * @return cursor
+   */
   public static Cursor getFavoritesCursor(SQLiteDatabase db) {
     return db.query(
             PasswordDatabase.DB_NAME,
@@ -19,6 +28,12 @@ public class CursorFactory {
     );
   }
   
+  /**
+   * Getting _id, NAME of all database
+   *
+   * @param db database
+   * @return cursor
+   */
   public static Cursor getPasswordsCursor(SQLiteDatabase db) {
     return db.query(
             PasswordDatabase.DB_NAME,
@@ -27,6 +42,13 @@ public class CursorFactory {
     );
   }
   
+  /**
+   * Getting row by _id
+   *
+   * @param db database
+   * @param rowID id of row
+   * @return cursor
+   */
   public static Cursor getRowByIdCursor(SQLiteDatabase db,
                                         int rowID) {
     return db.query(
@@ -42,6 +64,12 @@ public class CursorFactory {
             null, null, null);
   }
   
+  /**
+   * Getting cursor for checking favorites count
+   *
+   * @param db database
+   * @return cursor
+   */
   public static Cursor getCountFavoritesCursor(SQLiteDatabase db) {
     return db.rawQuery(
             "SELECT COUNT(*)" +
@@ -50,9 +78,14 @@ public class CursorFactory {
             null);
   }
   
+  /**
+   * Getting cursor for checking all rows count
+   *
+   * @param db database
+   * @return cursor
+   */
   public static Cursor getCountAllCursor(SQLiteDatabase db) {
     return db.rawQuery("SELECT COUNT(*) FROM " + PasswordDatabase.DB_NAME, null);
   }
-  
   
 }

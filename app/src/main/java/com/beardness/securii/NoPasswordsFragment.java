@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * Fragment when no passwords
+ */
 public class NoPasswordsFragment extends Fragment {
   
   @Override

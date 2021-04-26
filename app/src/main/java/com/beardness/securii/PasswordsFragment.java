@@ -17,6 +17,9 @@ import com.beardness.securii.Codez.Factories.CursorFactory;
 import com.beardness.securii.Codez.Factories.ListenerFactory;
 import com.beardness.securii.SQLiteTools.PasswordDatabase;
 
+/**
+ * Fragment with passwords list
+ */
 public class PasswordsFragment extends Fragment {
   
   private ListView listPasswords;
