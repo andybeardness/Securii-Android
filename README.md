@@ -34,4 +34,6 @@ The app does not collect data. Everything is stored only on the device
 
 ## Screenshots
 
-|![]()|![]()|![]()|![]()|
+| Start screen  | Passwords list | Create new password | Show existing password |
+| :-------------: | :-------------: | :-------------: | :-------------: |
+| ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s1.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s4.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s3.png)  | ![Start screen](https://github.com/andybeardness/Android-Securii/blob/main/imgs/s2.png)  |
