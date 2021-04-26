@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="app_name">Securii Менеджер паролей</string>
+  <string name="app_name_short">Securii</string>
+  <string name="app_description">Понравится твоей маме</string>
+  
+  <string-array name="main_jokes" tools:ignore="InconsistentArrays">
+    <item>Приложение понравится твоей маме</item>
+    <item>Откуда эта надпись?</item>
+    <item>Заказал доставку, а приложение написал, пока шёл курьер</item>
+    <item>Что сказала мать своему сыну-майнкрафтеру? Закругляйся</item>
+    <item>Как называют сборную Белоруссии по футболу? Тима Белорусских</item>
+    <item>Почему среди фигуристов, не бывает цыган? Никто не верит что это их конёк</item>
+  </string-array>
+  
+  <string name="favorites">Избранное</string>
+  <string name="passwords">Пароли</string>
+  <string name="about">О приложении</string>
+  
+  <string name="about_title">О приложении</string>
+  <string name="about_description_1">Приложение с открытым исходным кодом для хранения и создания паролей</string>
+  <string name="about_description_2">С ним можно хранить и генерировать сложные пароли и добавлять свои</string>
+  <string name="about_description_3">Есть поддержка добавления паролей в «Избранное» для быстрого доступа</string>
+  <string name="about_description_4">Приложение не собирает данные. Всё хранится только на устройстве</string>
+  <string name="about_description_danger_title">Предупреждение!</string>
+  <string name="about_description_danger_text_1">Не рекомендую использовать!</string>
+  <string name="about_description_danger_text_2">Приложение создавалось как учебное</string>
+  <string name="about_description_danger_text_3">Хочу пройти путь от идеи до релиза</string>
+  <string name="about_description_danger_text_4">Автор не несёт ответственности за данные</string>
+  <string name="about_source_code">Исходный код</string>
+  <string name="about_contacts">Контакты разработчика</string>
+  
+  <string name="no_passwords_title">Нет паролей</string>
+  <string name="no_passwords">Добавьте пароль, чтобы увидеть его в списке</string>
+  
+  <string name="add_title">Новый пароль</string>
+  <string name="add_name">Название</string>
+  <string name="add_name_hint">Название ресурса</string>
+  <string name="add_website_name">Сайт</string>
+  <string name="add_website_name_hint">(опционально)</string>
+  <string name="add_password">Пароль</string>
+  <string name="add_password_hint">Ввести или сгенерировать</string>
+  <string name="add_generate">Сгенерировать</string>
+  <string name="add_copy">Копировать</string>
+  <string name="add_length">Длина</string>
+  <string name="add_length_default">10</string>
+  <string name="add_enable_letters">Добавить строчные буквы?</string>
+  <string name="add_enable_upper_letters">Добавить заглавные буквы?</string>
+  <string name="add_enable_digits">Добавить цифры?</string>
+  <string name="add_enable_symbols">Добавить символы?</string>
+  <string name="add_save">Сохранить</string>
+  
+  <string name="toast_copied">Пароль скопирован</string>
+  <string name="toast_nothing_to_copy">Нечего копировать</string>
+  <string name="toast_found_empty_fields">Остались незаполненные поля : проверь Название и Пароль</string>
+  
+  <string name="ch_psw_website_title">Сайт</string>
+  <string name="ch_psw_password_title">Пароль</string>
+  <string name="ch_psw_btn_add_favorite">В избранное</string>
+  <string name="ch_psw_btn_remove_favorite">Из избранного</string>
+  <string name="ch_psw_btn_delete">Удалить</string>
+  <string name="ch_psw_btn_visible">Показать</string>
+  
+  <string name="toast_password_is_favorite">Пароль добавлен в избранное</string>
+  <string name="toast_password_is_not_favorite">Пароль удалён из избранных</string>
+  <string name="toast_password_has_deleted">Пароль удалён</string>
+
+</resources>

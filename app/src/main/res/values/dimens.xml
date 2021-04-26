@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="h1">42sp</dimen>
+  <dimen name="h2">18sp</dimen>
+  <dimen name="h3">16sp</dimen>
+  
+  <dimen name="screen_padding">16dp</dimen>
+  
+  <dimen name="main_button_padding">16dp</dimen>
+  <dimen name="main_button_margin">8dp</dimen>
+  <dimen name="main_title_margin">24dp</dimen>
+  <dimen name="main_description_margin">16dp</dimen>
+  <dimen name="about_contacts_margin">16dp</dimen>
+  <dimen name="about_text_padding">16dp</dimen>
+  
+  <dimen name="fab_margin_end">48dp</dimen>
+  <dimen name="fab_margin_bottom">48dp</dimen>
+  <dimen name="fab_image_size">48dp</dimen>
+  
+  <dimen name="add_title_padding">24dp</dimen>
+  
+  <dimen name="ch_psw_margin_bottom">24dp</dimen>
+  
+</resources>

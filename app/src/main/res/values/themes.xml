@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="SecuriiAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/self_blue_1</item>
+    <item name="colorPrimaryVariant">@color/self_blue_2</item>
+    <item name="colorOnPrimary">@color/self_blue_3</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/self_blue_1</item>
+    <item name="colorSecondaryVariant">@color/self_blue_2</item>
+    <item name="colorOnSecondary">@color/self_blue_6</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">@color/self_blue_6</item>
+    <!-- Customize your theme here. -->
+    <item name="android:colorBackground">@color/self_blue_2</item>
+    <item name="android:textColor">@color/self_blue_3</item>
+    <item name="android:navigationBarColor">@color/self_blue_6</item>
+  </style>
+</resources>

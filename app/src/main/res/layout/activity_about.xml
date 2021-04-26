@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:orientation="vertical"
+  tools:context=".AboutActivity">
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/main_title_margin"
+      android:layout_marginBottom="@dimen/main_title_margin"
+      android:gravity="center"
+      android:text="@string/about_title"
+      android:textSize="@dimen/h1" />
+    
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:src="@drawable/danger" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/about_description_danger_title"
+      android:textColor="@color/danger"
+      android:textSize="@dimen/h2" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/about_description_danger_text_1"
+      android:textColor="@color/danger"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/about_description_danger_text_2"
+      android:textColor="@color/danger"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/about_description_danger_text_3"
+      android:textColor="@color/danger"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/about_description_danger_text_4"
+      android:textColor="@color/danger"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_description_1"
+      android:textSize="@dimen/h3" />
+    
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_description_2"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_description_3"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_description_4"
+      android:textSize="@dimen/h3" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_source_code"
+      android:textSize="@dimen/h3" />
+    
+    <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_margin="@dimen/about_contacts_margin"
+      android:background="@null"
+      android:onClick="onClickGithub"
+      android:src="@drawable/contact_github" />
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/about_text_padding"
+      android:text="@string/about_contacts"
+      android:textSize="@dimen/h3" />
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+      
+      <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/about_contacts_margin"
+        android:background="@null"
+        android:onClick="onClickInstagram"
+        android:src="@drawable/contact_instagram" />
+      
+      <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/about_contacts_margin"
+        android:background="@null"
+        android:onClick="onClickTelegram"
+        android:src="@drawable/contact_telegram" />
+    
+    </LinearLayout>
+  
+  </LinearLayout>
+</ScrollView>
+  
+

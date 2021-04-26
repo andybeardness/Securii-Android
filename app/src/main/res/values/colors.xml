@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="self_blue_1">#FF327DA6</color>
+  <color name="self_blue_2">#FF1F4D66</color>
+  <color name="self_blue_3">#FF49B7F2</color>
+  <color name="self_blue_4">#FF45ADE6</color>
+  <color name="self_blue_5">#FF3D9ACC</color>
+  <color name="self_blue_6">#FF14384C</color>
+  
+  <color name="danger">#FF699F</color>
+  
+</resources>

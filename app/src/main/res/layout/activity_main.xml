@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mainScreen"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:orientation="vertical"
+  android:padding="16dp"
+  tools:context=".MainActivity">
+  
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="@dimen/main_title_margin"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="@string/app_name_short"
+    android:textSize="@dimen/h1" />
+  
+  <TextView
+    android:id="@+id/joke"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/main_description_margin"
+    android:gravity="center"
+    android:textSize="@dimen/h3" />
+  
+  <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clipToPadding="true"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:padding="16dp">
+    
+    <Button
+      android:id="@+id/favorites"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_columnWeight="1"
+      android:layout_margin="@dimen/main_button_margin"
+      android:background="@drawable/button_main"
+      android:drawableTop="@drawable/main_favorite"
+      android:orientation="vertical"
+      android:paddingTop="@dimen/main_button_padding"
+      android:paddingBottom="@dimen/main_button_padding"
+      android:text="@string/favorites" />
+    
+    <Button
+      android:id="@+id/passwords"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_columnWeight="1"
+      android:layout_margin="@dimen/main_button_margin"
+      android:background="@drawable/button_main"
+      android:drawableTop="@drawable/main_passwords"
+      android:orientation="vertical"
+      android:paddingTop="@dimen/main_button_padding"
+      android:paddingBottom="@dimen/main_button_padding"
+      android:text="@string/passwords" />
+    
+    <Button
+      android:id="@+id/about"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_columnSpan="2"
+      android:layout_columnWeight="1"
+      android:layout_margin="@dimen/main_button_margin"
+      android:background="@drawable/button_main"
+      android:drawableTop="@drawable/main_about"
+      android:orientation="vertical"
+      android:paddingTop="@dimen/main_button_padding"
+      android:paddingBottom="@dimen/main_button_padding"
+      android:text="@string/about" />
+  
+  </GridLayout>
+
+</LinearLayout>

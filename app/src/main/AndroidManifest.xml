@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.beardness.securii">
+  
+  <compatible-screens>
+    <!-- small screens -->
+    <screen
+      android:screenDensity="ldpi"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="mdpi"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="hdpi"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="xhdpi"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="420"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="480"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="560"
+      android:screenSize="small" />
+    <screen
+      android:screenDensity="640"
+      android:screenSize="small" />
+    <!-- normal screens -->
+    <screen
+      android:screenDensity="ldpi"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="mdpi"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="hdpi"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="xhdpi"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="420"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="480"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="560"
+      android:screenSize="normal" />
+    <screen
+      android:screenDensity="640"
+      android:screenSize="normal" />
+    <!-- large screens -->
+    <screen
+      android:screenDensity="ldpi"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="mdpi"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="hdpi"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="xhdpi"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="420"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="480"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="560"
+      android:screenSize="large" />
+    <screen
+      android:screenDensity="640"
+      android:screenSize="large" />
+  </compatible-screens>
+  
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/SecuriiAppTheme">
+    <activity
+      android:name=".FavoritesActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".ChoosenPasswordActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".AddNewPasswordActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".PasswordsActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".AboutActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".MainActivity"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

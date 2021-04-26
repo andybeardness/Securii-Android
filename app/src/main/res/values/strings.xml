@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  
+  <string name="app_name">Securii Password Manager</string>
+  <string name="app_name_short">Securii</string>
+  <string name="app_description">Your mom will like it</string>
+  
+  <string-array name="main_jokes" tools:ignore="InconsistentArrays">
+    <item>Your mom will like this app</item>
+    <item>Where does this inscription come from?</item>
+    <item>I ordered delivery, and wrote the application while the courier was walking</item>
+    <item>What did the mother say to her son minecraft player? Round up</item>
+  </string-array>
+  
+  <string name="favorites">Favorites</string>
+  <string name="passwords">Passwords</string>
+  <string name="about">About the app</string>
+  
+  <string name="about_title">About the app</string>
+  <string name="about_description_1">Open source application for storing and generating passwords</string>
+  <string name="about_description_2">With it, you can store and generate complex passwords and add your own</string>
+  <string name="about_description_3">There is support for adding passwords to "Favorites" for quick access</string>
+  <string name="about_description_4">The app does not collect data. Everything is stored only on the device</string>
+  <string name="about_description_danger_title">A warning!</string>
+  <string name="about_description_danger_text_1">I do not recommend using it!</string>
+  <string name="about_description_danger_text_2">The application was created as an educational</string>
+  <string name="about_description_danger_text_3">I want to go from idea to release</string>
+  <string name="about_description_danger_text_4">The author is not responsible for the data</string>
+  <string name="about_source_code">Source</string>
+  <string name="about_contacts">Developer contacts</string>
+  
+  <string name="no_passwords_title">No passwords</string>
+  <string name="no_passwords">Add a password to see it in the list</string>
+  
+  <string name="add_title">New password</string>
+  <string name="add_name">Name</string>
+  <string name="add_name_hint">Resource name</string>
+  <string name="add_website_name">Website</string>
+  <string name="add_website_name_hint">(optional)</string>
+  <string name="add_password">Password</string>
+  <string name="add_password_hint">Enter or generate</string>
+  <string name="add_generate">Generate</string>
+  <string name="add_copy">Copy</string>
+  <string name="add_length">Length</string>
+  <string name="add_length_default">10</string>
+  <string name="add_enable_letters">Add lowercase letters?</string>
+  <string name="add_enable_upper_letters">Add capital letters?</string>
+  <string name="add_enable_digits">Add numbers?</string>
+  <string name="add_enable_symbols">Add symbols?</string>
+  <string name="add_save">Save</string>
+  
+  <string name="toast_copied">Password copied</string>
+  <string name="toast_nothing_to_copy">Nothing to copy</string>
+  <string name="toast_found_empty_fields">Fields left blank: check Name and Password</string>
+  
+  <string name="ch_psw_website_title">Website</string>
+  <string name="ch_psw_password_title">Password</string>
+  <string name="ch_psw_btn_add_favorite">To favorites</string>
+  <string name="ch_psw_btn_remove_favorite">From favorites</string>
+  <string name="ch_psw_btn_delete">Delete</string>
+  <string name="ch_psw_btn_visible">Show</string>
+  
+  <string name="toast_password_is_favorite">Password added to favorites</string>
+  <string name="toast_password_is_not_favorite">Password removed from favorites</string>
+  <string name="toast_password_has_deleted">Password deleted</string>
+  
+</resources>
